@@ -1,0 +1,119 @@
+html {
+  font-size: 14px;
+  position: relative;
+  min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/Images/fondo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  margin: 10px 0px 20px 0px;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10%;
+}
+
+/* Card */
+.tarjeta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  width: 20%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(35, 40, 41, 0.7);
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.series-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.series-name {
+  font-size: 1.2rem;
+  padding: 10px;
+  color: #fff;
+}
+
+.links button {
+  margin: 10px;
+  background-color: #e50914;
+  border: none;
+  border-radius: 5px;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.links button:hover {
+  background-color: #ff4f52;
+}
+
+
+/* Modal */
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+  color: #000;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.btn-secondary {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-secondary:hover {
+  background-color: #444;
+}
